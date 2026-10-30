@@ -1,46 +1,5 @@
-:root {
-  --bg: #f5f5f7;
-  --card-bg: #ffffff;
-  --text: #1d1d1f;
-  --text-muted: #6e6e73;
-  --btn-bg: #ffffff;
-  --btn-border: #d2d2d7;
-  --btn-hover-bg: #1d1d1f;
-  --btn-hover-text: #ffffff;
-  --avatar-bg: #e5e5ea;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  color-scheme: light;
-}
-
-:root.dark {
-  --bg: #0f0f12;
-  --card-bg: #1c1c21;
-  --text: #f5f5f7;
-  --text-muted: #a1a1a6;
-  --btn-bg: #26262c;
-  --btn-border: #3a3a42;
-  --btn-hover-bg: #f5f5f7;
-  --btn-hover-text: #1d1d1f;
-  --avatar-bg: #2c2c33;
-  --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  color-scheme: dark;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-body {
-  min-height: 100vh;
-  font-family: 'Raleway', system-ui, sans-serif;
-  background: var(--bg);
-  color: var(--text);
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-  transition:
-    background-color 0.3s ease,
-    color 0.3s ease;
+/* Vuetify's typography classes hard-code Roboto */
+.v-application,
+.v-application [class*='text-'] {
+  font-family: 'Raleway', system-ui, sans-serif !important;
 }
